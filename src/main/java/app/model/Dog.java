@@ -5,11 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope("singleton")
-public class Timer {
-
-    private Long nanoTime = System.nanoTime();
-
-    public Long getTime() {
-        return nanoTime;
+public class Dog extends Animal{
+    @Override
+    public String toString() {
+        return "Гав!";
     }
 }
